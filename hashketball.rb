@@ -174,3 +174,12 @@ def big_shoe_rebounds
   end
   p.last[:rebounds]
 end
+
+def player_by_number(number)
+  players = game_hash[:home][:players] + game_hash[:away][:players]
+  player = players.find do |p|
+    p[:number] == number
+  end
+  return number
+end
+puts player_by_number(33)
