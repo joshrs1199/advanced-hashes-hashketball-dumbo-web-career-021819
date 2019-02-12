@@ -180,6 +180,6 @@ def player_by_number(number)
   player = players.find do |p|
     p[:number] == number
   end
-  return number
+  return player
 end
 puts player_by_number(33)
